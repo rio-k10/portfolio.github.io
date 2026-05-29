@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $navbar-background-color;
+  position: fixed;
+  width: 64px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  flex-flow: column nowrap;
+  border-right: 1px solid $primary-color;
+  .navlist {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+}
