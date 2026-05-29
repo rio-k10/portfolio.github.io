@@ -1,0 +1,15 @@
+.tagwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .tagcloud {
+    color: white;
+    &:last-child {
+      display: none;
+    }
+    .tagcloud--item {
+      opacity: 1 !important;
+    }
+  }
+}

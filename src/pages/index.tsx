@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import Contact from './Contact';
+import Skills from './Skills';
 import Work from './Work';
 import About from './About';
 import Home from './Home';
@@ -14,7 +14,7 @@ function Pages({}: Props) {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/work' element={<Work />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/skills' element={<Skills />} />
       </Routes>
     </Layout>
   );

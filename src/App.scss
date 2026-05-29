@@ -4,17 +4,15 @@
 @import './style/components/Layout.scss';
 @import './style/components/NavItem.scss';
 @import './style/components/Logo.scss';
+@import './style/components/TagCloud.scss';
 
 #root {
   font-family: 'Inter', sans-serif;
-  color: #333;
+  color: $text-color;
   background-color: $background-color;
   min-height: 100vh;
   .app {
     display: block;
     position: relative;
-    p {
-      color: $text-color;
-    }
   }
 }
