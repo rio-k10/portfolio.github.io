@@ -1,8 +1,12 @@
 .layout {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
   .content {
-    padding-left: 88px;
-    padding-right: 24px;
-    padding-bottom: 24px;
-    padding-top: 24px;
+    width: 1200px;
+    border: solid 1px green;
+    box-sizing: border-box;
   }
 }

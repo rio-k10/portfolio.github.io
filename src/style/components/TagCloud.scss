@@ -2,9 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  border: solid 1px blue;
   .tagcloud {
-    color: white;
+    border: solid 1px green;
+    color: $primary-color;
     &:last-child {
       display: none;
     }

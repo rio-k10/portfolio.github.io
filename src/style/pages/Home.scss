@@ -1,0 +1,123 @@
+.home {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  &-certs {
+    position: fixed;
+    font-size: 20px;
+    bottom: 24px;
+    opacity: 0;
+    right: 24px;
+    animation-delay: 4s; /* Delay before the animation starts */
+    animation-name: home-cert-fade; /* Name of the animation defined below */
+    animation-duration: 1s; /* How long the fade takes */
+    animation-timing-function: ease-out; /* Makes the fade smooth */
+    animation-fill-mode: forwards; /* Keeps the final state of the animation */
+    &-tick {
+      color: white;
+      background: #ffaa00;
+      border-radius: 4px;
+      padding: 0 6px;
+    }
+    &-aws {
+      color: $primary-color;
+      font-weight: 600;
+    }
+    // img {
+    //   width: 128px;
+    //   height: auto;
+    // }
+  }
+  &-title {
+    border: solid 1px red;
+    animation-duration: 2s; /* How long the fade takes */
+    animation-delay: 1s;
+    animation-name: home-title-fade; /* Name of the animation defined below */
+    animation-timing-function: ease-in; /* Makes the fade smooth */
+    animation-fill-mode: forwards; /* Keeps the final state of the animation */
+    flex: 1;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    p {
+      margin-bottom: 12px;
+      &:last-child {
+        padding-left: 24px;
+      }
+    }
+
+    &-highlight {
+      color: $primary-color;
+      font-weight: 600;
+    }
+
+    // &-graphic {
+    //   width: 300px;
+    //   height: 300px;
+    //   background-color: $primary-color;
+    //   border-radius: 50%;
+    // }
+  }
+
+  &-hero {
+    border: solid 1px red;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &-graphic {
+      position: relative;
+      svg {
+        opacity: 0;
+        animation-duration: 4s; /* How long the fade takes */
+        animation-delay: 2s;
+        animation-name: home-graphic-fade; /* Name of the animation defined below */
+        animation-timing-function: ease-in; /* Makes the fade smooth */
+        position: relative;
+        animation-fill-mode: forwards; /* Keeps the final state of the animation */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        width: auto;
+        path {
+          fill: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@keyframes home-cert-fade {
+  from {
+    right: 0;
+    opacity: 0; /* Start completely transparent */
+  }
+  to {
+    opacity: 1; /* End fully opaque */
+  }
+}
+
+@keyframes home-title-fade {
+  from {
+    opacity: 0; /* Start completely transparent */
+  }
+  to {
+    opacity: 1; /* End fully opaque */
+  }
+}
+
+@keyframes home-graphic-fade {
+  from {
+    opacity: 0; /* Start completely transparent */
+  }
+  to {
+    opacity: 1; /* End fully opaque */
+  }
+}
